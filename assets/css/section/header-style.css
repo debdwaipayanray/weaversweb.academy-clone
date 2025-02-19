@@ -1,0 +1,154 @@
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header .container {
+    max-width: 1844px;
+}
+
+header .top_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_icon {
+    max-width: 190px;
+    width: 190px;
+}
+
+.nav_icon a {
+    display: inline-block;
+}
+
+.nav_icon a img {
+    width: 100%;
+}
+
+nav .menu_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .menu_items ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+nav .menu_items ul li.menu_child_item a {
+    font-family: var(--ff-SofiaSans);
+    font-weight: var(--fw-500);
+    font-size: 16px;
+    color: var(--white);
+    line-height: 1.2;
+}
+
+/* *** toogle Menu Icon Area Start */
+.toogleMenuIcon {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: block;
+}
+
+.toogleMenuIcon span {
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.toogleMenuIcon>span:nth-child(1) {
+    top: 10px;
+}
+
+.toogleMenuIcon>span:nth-child(2) {
+    top: 20px;
+}
+
+.toogleMenuIcon>span:nth-child(3) {
+    top: 30px;
+}
+
+.toogleMenuIcon:hover>span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.toogleMenuIcon:hover>span:nth-child(2) {
+    width: 0;
+}
+
+.toogleMenuIcon:hover>span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+/* *** toogle Menu Icon Area End */
+
+/* *** Mobile Menu Area Start */
+.mobileMenu {
+    height: 100vh;
+    width: 330px;
+    max-width: 100%;
+    background-color: #576f81;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+    padding: 20px 15px 0 40px;
+}
+
+.mobileMenu.nav_active {
+    right: 0;
+}
+
+.closeMenuContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.closeMenuContainer button {
+    width: fit-content;
+    display: flex;
+    align-self: end;
+    border: 0;
+    outline: 0;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.closeMenuContainer button i {
+    font-size: 18px;
+}
+
+.mobile_nav_area ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.mobile_nav_area ul li a {
+    font-family: var(--ff-SofiaSans);
+    font-weight: var(--fw-500);
+    font-size: 20px;
+    color: var(--white);
+    line-height: 1.2;
+}

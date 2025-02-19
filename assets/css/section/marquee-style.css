@@ -1,0 +1,42 @@
+.marquee_section {
+    overflow: hidden;
+}
+
+.marquee_container {
+    background-color: var(--marquee-bg);
+    display: flex;
+    padding: 25px 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    gap: 20px;
+}
+
+.marquee_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.marquee_content h4 {
+    white-space: nowrap;
+    margin: 0;
+}
+
+.marquee_content h4 i {
+    margin-left: 25px;
+}
+
+.marquee_scroll {
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 1rem));
+    }
+}

@@ -1,0 +1,46 @@
+.student_placed {
+    position: relative;
+}
+
+.student_placed img {
+    width: 100%;
+}
+
+.student_placed .content_wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.student_placed .content_wrapper img {
+    opacity: 0.7;
+}
+
+.student_placed .inner_content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 650px;
+    /* background-color: red; */
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.student_placed .inner_content h2 {
+    font-family: var(--ff-SofiaSans);
+    font-weight: var(--fw-800);
+    font-size: 45px;
+    color: var(--primary);
+}
+
+.student_placed .inner_content a.common_btn {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.student_placed .inner_content a.common_btn:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}

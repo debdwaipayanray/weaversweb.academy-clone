@@ -1,0 +1,104 @@
+footer {
+    background-color: #000;
+}
+
+footer h6 {
+    font-family: var(--ff-SofiaSans);
+    font-weight: var(--fw-500);
+    font-size: 24px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+footer ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+footer ul li a {
+    font-family: var(--ff-SofiaSans);
+    font-weight: var(--fw-400);
+    font-size: 18px;
+    color: #B1B1B1;
+}
+
+footer .top_area {
+    display: flex;
+    align-items: center;
+}
+
+footer .top_area .left_area {
+    margin-right: 70px;
+}
+
+footer .bottom_area {
+    margin-top: 44px;
+}
+
+/* *** Footer Address Icon Area *** */
+footer .bottom_area {
+    display: flex;
+}
+
+footer .bottom_area a {
+    height: 53px;
+    width: 53px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 17px;
+    flex: 0 0 53px;
+    border-radius: 50%;
+}
+
+footer .bottom_area .address_info h6 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer .bottom_area .address_info p {
+    font-size: 18px;
+    color: #B1B1B1;
+    margin: 0;
+}
+
+footer .btn_area a:not(:last-child) {
+    margin-bottom: 17px;
+}
+
+footer .bottom_area {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .bottom_area p {
+    font-family: var(--ff-SofiaSans);
+    font-weight: var(--fw-400);
+    font-size: 18px;
+    color: #B1B1B1;
+}
+
+footer .bottom_area ul {
+    display: flex;
+    gap: 17px;
+}
+
+footer .bottom_area ul li a {
+    margin: 0;
+    background-color: #292929;
+    transition: all 0.5s ease;
+}
+
+footer .bottom_area ul li a i {
+    color: #fff;
+}
+
+footer .bottom_area ul li a:hover {
+    background-color: #fff;
+}
+
+footer .bottom_area ul li a:hover i {
+    color: #292929;
+}

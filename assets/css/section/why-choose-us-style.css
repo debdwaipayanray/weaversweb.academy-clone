@@ -1,0 +1,106 @@
+.why_choose_us {
+    background-color: #f0f6ff;
+}
+
+.why_choose_us .col-lg-6 {
+    position: relative;
+}
+
+.why_choose_us .col-lg-6:nth-child(2n+1) {
+    padding-right: 60px;
+}
+
+.why_choose_us .col-lg-6:nth-child(2n+2) {
+    top: 150px;
+}
+
+.each_why_box {
+    background: linear-gradient(180deg, #ffd9de 0%, #ffc6ce 100%);
+    border: 2px solid #f8acb7;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    margin-bottom: 120px;
+    position: relative;
+    z-index: 1;
+    transition: var(--common-transition);
+    padding-top: 80px;
+}
+
+.each_why_box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url('../../images/why-choose-us/process-box-bg-shape.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.1;
+}
+
+.each_why_box:hover {
+    box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
+    transform: rotate(2deg);
+}
+
+.left_content_wrapper {
+    padding: 20px 0 5px 25px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 60%;
+}
+
+.left_content_wrapper .icon_area {
+    margin-bottom: 15px;
+}
+
+.each_why_box:hover .icon_area {
+    filter: invert(1);
+}
+
+.left_content_wrapper h3 {
+    font-family: var(--ff-SofiaSans);
+    font-weight: var(--fw-800);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.left_content_wrapper p {
+    font-family: var(--ff-SofiaSans);
+    font-weight: var(--fw-400);
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.right_img_wrapper {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 40%;
+    padding-top: 25px;
+}
+
+.right_img_wrapper img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* === Each col-lg-6 arrow style === */
+.why_choose_us .col-lg-6:nth-child(2n+1)::after {
+    content: "";
+    position: absolute;
+    width: 485px;
+    height: 97px;
+    top: 43px;
+    right: -425px;
+    z-index: 1;
+    background-image: url('../../images/why-choose-us/process-bg-rt.svg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100%;
+    z-index: revert-layer;
+}

@@ -1,0 +1,157 @@
+@media (min-width:992px) {
+    .toogleMenuIcon {
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+
+    /* *** Header Area Start *** */
+    nav .menu_items {
+        display: none;
+    }
+
+    /* *** Header Area End *** */
+
+    /* *** Form Area Start *** */
+    .form_section .col-lg-6:nth-child(1) {
+        width: 100%;
+    }
+
+    .form_section .col-lg-6:nth-child(2) {
+        display: none;
+    }
+
+    /* *** Form Area End *** */
+
+    /* *** Our Videos Area Start *** */
+    .our_videos .row {
+        gap: 1.5rem;
+    }
+
+    /* *** Our Videos Area End *** */
+
+    /* *** Why Choose Us Area Start *** */
+    .why_choose_us .col-lg-6 {
+        position: static;
+        margin-bottom: 30px;
+    }
+
+    .why_choose_us .col-lg-6:nth-child(2n+1)::after {
+        display: none;
+    }
+
+    .why_choose_us .col-lg-6:nth-child(2n+1) {
+        padding-right: 12px;
+    }
+
+    .each_why_box {
+        margin-bottom: 0;
+    }
+
+    /* *** Why Choose Us Area End *** */
+
+    /* *** Footer Area Start *** */
+    footer .container>.row {
+        gap: 2rem;
+    }
+
+    footer .middleArea {
+        margin-top: 2rem;
+    }
+
+    footer .col-lg-12 .bottom_area {
+        gap: 1rem;
+    }
+
+    /* *** Footer Area End *** */
+}
+
+@media (max-width:700px) {
+
+    /* Commond Btn */
+    .common_btn {
+        padding: 10px 15px;
+    }
+
+    /* Banner Area Start */
+    .banner_section .container {
+        flex-direction: column;
+    }
+
+    .banner_section h1 {
+        font-size: 30px;
+    }
+
+    .banner_section .right_container>a.common_btn {
+        padding: 15px 30px;
+    }
+
+    /* Banner Area End */
+
+    /* Student Placed Area Start */
+    .student_placed .inner_content h2 {
+        font-size: 28px;
+    }
+
+    .student_placed .content_wrapper {
+        width: 100%;
+    }
+
+    /* Student Placed Area End */
+
+    /* *** Footer Area Start *** */
+    footer.common_padding {
+        padding-bottom: 1rem;
+    }
+
+    footer .top_area {
+        flex-direction: column;
+        align-items: baseline;
+        gap: 2rem;
+    }
+
+    footer .col-lg-12 .bottom_area {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    footer .bottom_area ul li a {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer .bottom_area ul li a i {
+        font-size: 13px;
+    }
+
+    footer .bottom_area p {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    footer .bottom_area .address_info p {
+        text-align: left;
+    }
+
+    /* *** Footer Area End *** */
+}
+
+@media (max-width:450px) {
+
+    /* Our Videos Area Start */
+    .our_videos .each_video .content_wrapper h3 {
+        font-size: 30px;
+    }
+
+    .our_videos .each_video .content_wrapper a {
+        width: 70px;
+        height: 70px;
+    }
+
+    .our_videos .each_video .content_wrapper a i {
+        font-size: 18px;
+    }
+
+    /* Our Videos Area End */
+}

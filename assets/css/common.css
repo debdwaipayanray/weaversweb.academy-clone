@@ -1,0 +1,104 @@
+/* ==== Common CSS ==== */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.common_btn {
+    outline: none;
+    border: none;
+    padding: 15px 30px;
+    font-family: var(--ff-SofiaSans);
+    font-weight: var(--fw-700);
+    font-size: 16px;
+    background-color: var(--white);
+    color: var(--black);
+    transition: var(--common-transition);
+    border-radius: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.common_btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.common_btn_reverse {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.common_btn_reverse:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.button_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+input,
+select {
+    outline: none;
+    border: 1px solid #D1DBEA !important;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 40px;
+    width: 100%;
+    font-family: var(--ff-SofiaSans);
+    font-weight: var(--fw-400);
+    color: #2E2E2E;
+}
+
+select {
+    background-image: url('../images/course-form/select-arrw-dwn.svg');
+    background-position: center right 25px;
+    background-repeat: no-repeat;
+    appearance: none;
+}
+
+.common_section_title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.common_section_title h3 {
+    font-family: var(--ff-SofiaSans);
+    font-weight: var(--fw-800);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.common_section_title p {
+    font-family: var(--ff-SofiaSans);
+    font-weight: var(--fw-400);
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.common_padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
